@@ -37,6 +37,7 @@ namespace Gridnine.FlightCodingTest
 			           };
         }
 
+
         private static Flight CreateFlight(params DateTime[] dates)
         {
             if (dates.Length % 2 != 0) throw new ArgumentException("You must pass an even number of dates,", "dates");
