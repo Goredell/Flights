@@ -4,14 +4,14 @@ using System.Linq;
 
 namespace Gridnine.FlightCodingTest
 {
-	class DepartureBeforeNow:IFilter
+	public class DepartureBeforeNow :IFilter
 	{
 		//вылет до текущего момента времени
 
 
 		public IList<Flight> filter(IList<Flight> input)
 		{
-			Console.WriteLine("вылет до текущего момента времени");
+			Console.WriteLine("Удалены перелёты, в которых вылет производится до текущего момента времени");
 
 			//IList<Flight> arr = new List<Flight>();
 			//

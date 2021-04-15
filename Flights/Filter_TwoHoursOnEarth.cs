@@ -3,14 +3,14 @@ using System.Collections.Generic;
 
 namespace Gridnine.FlightCodingTest
 {
-	class TwoHoursOnEarth : IFilter
+	public class TwoHoursOnEarth : IFilter
 	{
 		//общее время, проведённое на земле превышает два часа
 		public IList<Flight> filter(IList<Flight> input)
 		{
 			IList<Flight> arr = new List<Flight>();
 
-			Console.WriteLine("общее время, проведённое на земле превышает два часа");
+			Console.WriteLine("Удалены перелёты, в которых общее время, проведённое на земле превышает два часа");
 
 			foreach(Flight f in input)
 			{

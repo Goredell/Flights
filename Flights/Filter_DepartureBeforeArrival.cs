@@ -9,7 +9,7 @@ namespace Gridnine.FlightCodingTest
 		//имеются сегменты с датой прилёта раньше даты вылета
 		public IList<Flight> filter(IList<Flight> input)
 		{
-			Console.WriteLine("имеются сегменты с датой прилёта раньше даты вылета");
+			Console.WriteLine("Удалены перелёты, в которых имеются сегменты с датой прилёта раньше даты вылета");
 
 			IList<Flight> arr = new List<Flight>();
 			

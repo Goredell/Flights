@@ -12,6 +12,7 @@ namespace Flights
 			var FW = new FlightWorker(new DepartureBeforeArrival());
 			var flights = FB.GetFlights();
 
+			Console.WriteLine("Данные с \"Фабрики\"");
 			talker(flights);
 
 			talker(FW.filter(flights));
@@ -30,7 +31,9 @@ namespace Flights
 			foreach (Flight f in input)
 			{
 				foreach (Segment s in f.Segments)
+				{
 					Console.Write($"{s.DepartureDate} - {s.ArrivalDate} ");
+				}
 				Console.WriteLine();
 			}
 			Console.WriteLine();
